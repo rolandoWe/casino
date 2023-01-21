@@ -1,0 +1,211 @@
+
+*{
+    margin: 0;
+}
+.container{
+    width:100%;
+    height:100vh;
+    background: linear-gradient(purple,blue,violet);
+}
+.container,.reloj{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caja_demo{
+    position: fixed;
+    width: 100%;
+    height:100%;
+    background-color: white;
+    z-index: 150;
+    transform: translateY(-200%);
+    transition: 1s;
+}
+.ver_demo{
+    transform: translateY(0%);
+
+}
+.imagen{
+    width:100%;
+    height:90%;
+    /* border: solid black 1px; */
+}
+.imagen img{
+    width: 100%;
+}
+.caja_demo button{
+    background-color: rgb(0, 38, 255);
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    color:white
+}
+/*  */
+.reloj{
+    width:500px;
+    height:500px;
+    /* border:solid black 1px; */
+    background-color: white;
+    perspective: 1500px;
+    /* overflow: hidden; */
+
+}
+.caja{
+width:200px;
+height:100px;
+/* border: solid red 1px; */
+position: relative;
+transform-style: preserve-3d;
+transform: rotateY(48deg) rotateX(-15deg) rotateZ(-25deg);
+z-index: 100;
+font-family: 'Quantico', sans-serif;
+color: rgb(35, 176, 0);
+
+}
+.am{
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 1px;
+    font-size: 12px;
+
+}
+.hora{
+    width: 96%;
+    height:80%;
+    text-align: right;
+    font-size: 60px;
+    line-height: 70px;
+}
+.dia{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    font-size: 15px;
+}
+.mes_anio{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 18px;
+}
+.caraF,.caraA,.caraT,.caraI,.caraD,.caraAB{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.caraF{
+    background:linear-gradient(black,black,black);
+    transform: translateZ(100px);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    overflow: hidden;
+
+}
+.caraI{
+    background: linear-gradient(rgb(188, 188, 188), blue,blue);
+    transform: translateX(-100px) rotateY(90deg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    animation: animar 5s infinite linear;
+}
+.caraD{
+    background-color: rgb(5, 5, 5);
+    transform: translateX(100px) rotateY(90deg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+.caraT{
+    background-color: rgb(188, 188, 188);
+    transform: translateZ(-100px);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+.caraA{
+    background: linear-gradient(90deg, rgb(187, 187, 187),blue,blue,blue,rgb(188, 188, 188));
+    transform: translateY(-100px) rotateX(90deg);
+    height: 200%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(171, 171, 171);
+    text-shadow: 0 0 3px rgb(0, 0, 0);
+    animation: animarArriba 5s infinite linear;
+}
+.caraAB{
+    background-color: rgb(2, 2, 2);
+}
+.sombra{
+    background: linear-gradient(rgb(135, 135, 135),rgb(118, 118, 118),rgb(131, 131, 131),rgb(73, 73, 73),rgb(68, 68, 68));
+    border-radius: 50%;
+    width:350px;
+    height: 200px;
+    position: absolute;
+    transform: rotateX(35deg) translateY(50px);
+}
+.inspi{
+    position: absolute;
+    bottom: 60px;
+    font-size: 23px;
+    background-color: rgb(2, 23, 212);
+    border: solid blue 1px;
+    color: rgb(245, 245, 245);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.cli{
+    display: inline-block;
+     color:black
+}
+@keyframes animar{
+    0%{
+        background: linear-gradient(rgb(188, 188, 188), rgb(4, 4, 187),blue);
+    }
+    25%{
+        background: linear-gradient(rgb(188, 188, 188), rgb(0, 81, 255),rgb(3, 3, 173));
+    }
+    50%{
+    background: linear-gradient(rgb(188, 188, 188), rgb(1, 40, 181),blue);   
+    }
+    75%{
+    background: linear-gradient(rgb(188, 188, 188), rgb(6, 6, 137),rgb(0, 115, 255));   
+    }
+    100%{
+    background: linear-gradient(rgb(188, 188, 188), blue,rgb(2, 20, 182));   
+    }
+
+}
+@keyframes animarArriba{
+    0%{
+        background: linear-gradient(90deg, rgb(187, 187, 187),blue,blue,blue,rgb(188, 188, 188)); 
+    transition: 3s;
+
+    }
+    25%{
+        background: linear-gradient(90deg, rgb(187, 187, 187),blue,rgb(2, 84, 142),rgb(25, 39, 190),rgb(188, 188, 188)); 
+    }
+    50%{
+        background: linear-gradient(90deg, rgb(187, 187, 187),rgb(68, 79, 203),rgb(2, 16, 179),rgb(2, 22, 203),rgb(188, 188, 188)); 
+    }
+    75%{
+        background: linear-gradient(90deg, rgb(187, 187, 187),rgb(2, 44, 214),rgb(1, 53, 195),rgb(1, 15, 173),rgb(188, 188, 188)); 
+    }
+    75%{
+        background: linear-gradient(90deg, rgb(187, 187, 187),rgb(0, 21, 211),rgb(0, 6, 185),rgb(19, 43, 176),rgb(188, 188, 188)); 
+    }
+}

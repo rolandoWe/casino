@@ -4,187 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casino.</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="index.css">
+    <title>reloj3d</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css?v=1.1">
 </head>
 <body>
     <div class="container">
-        <h2><span class="letras">c</span><span class="letras">a</span><span class="letras">z</span><span class="letras">i</span><span class="letras">n</span><span class="letras">i</span>
+        <div class="reloj">
 
-        </h2>
-        <div class="pantalla">
-            <!-- <label for="">Saldo</label> -->
-            <input type="text" class="saldo" value="100">
-            <span class="dolar"> <i class="fa-solid fa-circle-dollar-to-slot"></i> </span>
-            <!--  -->
-            <div class="extra">
-                <input type="text" class="recomp" value="0">
-                <i class="fa-solid fa-circle-dollar-to-slot"></i>
+            <div class="caja">
+                <div class="caraF">
+                    <span class="am">AM</span>
+                    <p class="hora">10:00</p>
+                    <span class="dia">lun 23</span>
+                    <span class="mes_anio">ene 2023</span>
+                </div>
+                <div class="caraA">Made with HTML, CSS and JavaScript</div>
+                <div class="caraT"></div>
+                <div class="caraI"></div>
+                <div class="caraD"></div>
+                <div class="caraAB"></div>
             </div>
-        </div>
-        <div class="contenedor">
-            <span class="inf1"><i class="fa-solid fa-circle-info"></i></span>
-            <span class="inf2"><i class="fa-solid fa-circle-info"></i></span>
-            <div class="rules">
-                <div class="indic indic1">
-                    <span class="x_indic1">X</span>
-                    <p>Paga</p>
-                    <div class="x2">
-                        <div class="imagenes">
-                            <img src="imagenes/bonus.png" alt="">
-                            <img src="imagenes/bonus.png" alt="">
-                            <img src="imagenes/uvasCasino.png" alt="">
-                        </div>
-                        <span class="bonus_x2">x5</span>
-                    </div>
-                    <div class="x2">
-                        <div class="imagenes">
-                            <img src="imagenes/bonus.png" alt="">
-                            <img src="imagenes/bonus.png" alt="">
-                            <img src="imagenes/siete.png" alt="">
-                        </div>
-                        <span class="bonus_x2">x5</span>
-                    </div>
-                    <div class="x2">
-                        <div class="imagenes">
-                            <img src="imagenes/siete.png" alt="">
-                            <img src="imagenes/siete.png" alt="">
-                            <img src="imagenes/jungla.png" alt="">
-                        </div>
-                        <span class="bonus_x2">x5</span>
-                    </div>
-                    <div class="x2">
-                        <div class="imagenes">
-                            <img src="imagenes/jungla.png" alt="">
-                            <img src="imagenes/jungla.png" alt="">
-                            <img src="imagenes/bonus.png" alt="">
-                        </div>
-                        <span class="bonus_x2">x10</span>
-                    </div>
-                    <div class="x2">
-                        <div class="imagenes">
-                            <img src="imagenes/siete.png" alt="">
-                            <img src="imagenes/siete.png" alt="">
-                            <img src="imagenes/siete.png" alt="">
-                        </div>
-                        <span class="bonus_x2">x20</span>
-                    </div>
-                    <div class="x2">
-                        <div class="imagenes">
-                            <img src="imagenes/uvasCasino.png" alt="">
-                            <img src="imagenes/uvasCasino.png" alt="">
-                            <img src="imagenes/uvasCasino.png" alt="">
-                        </div>
-                        <span class="bonus_x2">x20</span>
-                    </div>
-                    <div class="x2">
-                        <div class="imagenes">
-                            <img src="imagenes/jungla.png" alt="">
-                            <img src="imagenes/jungla.png" alt="">
-                            <img src="imagenes/jungla.png" alt="">
-                        </div>
-                        <span class="bonus_x2">x50</span>
-                    </div>
+            <div class="sombra"></div>
+            <div class="inspi">Inspirado en:</div>
 
-                </div>
-                <div class="rule rule1">
-                    <div class="cont_img">
-                        <div id="image"></div>
-                        <div id="image" class="im1"></div>
-                        <div id="image"></div>
-                        <div id="image"></div>
-                        <div id="image"></div>
-                        <div id="image"></div>
-                        <div id="image"></div>
-                        <div id="image"></div>
-                        <div id="image"></div>
-                    </div>
-                </div>
-            <!--  -->
-                <div class="rule rule2">
-                    <div class="cont_img">
-                        <div id="image"></div>
-                        <div id="image" class="im2"></div>
-                        <div id="image"></div>
-                        <div id="image"></div>
-                        <div id="image"></div>
-                        <div id="image"></div>
-                        <div id="image"></div>
-                        <div id="image"></div>
-                        <div id="image"></div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="rule rule3">
-                    <div class="cont_img">
-                        <div id="image"></div>
-                        <div id="image" class="im3"></div>
-                        <div id="image"></div>
-                        <div id="image"></div>
-                        <div id="image"></div>
-                        <div id="image"></div>
-                        <div id="image"></div>
-                        <div id="image"></div>
-                        <div id="image"></div>
-                    </div>
-                </div>
-                <div class="indic indic2">
-                    <span class="x_indic2">X</span>
-
-                    <p>Paga</p>
-                    <div class="x2">
-                        <div class="imagenes">
-                            <img src="imagenes/bonus.png" alt="">
-                            <img src="imagenes/uvasCasino.png" alt="">
-                            <img src="imagenes/bonus.png" alt="">
+                        <!-- demo -->
+                        <div class="caja_demo">
+                            <div class="imagen">
+                                <img src="imagenes/operation.png" alt="">
+                            </div>
+                            <button type="button" class="cerrar_demo">cerrar</button>
                         </div>
-                        <span class="bonus_x2">x100</span>
-                    </div>
-                    <div class="x2">
-                        <div class="imagenes">
-                            <img src="imagenes/jungla.png" alt="">
-                            <img src="imagenes/jungla.png" alt="">
-                            <img src="imagenes/uvasCasino.png" alt="">
-                        </div>
-                        <span class="bonus_x2">x200</span>
-                    </div>
-                    <div class="x2">
-                        <div class="imagenes">
-                            <img src="imagenes/bonus.png" alt="">
-                            <img src="imagenes/jungla.png" alt="">
-                            <img src="imagenes/bonus.png" alt="">
-                        </div>
-                        <span class="bonus_x2">x200</span>
-                    </div>
-                    <div class="x2">
-                        <div class="imagenes">
-                            <img src="imagenes/bonus.png" alt="">
-                            <img src="imagenes/bonus.png" alt="">
-                            <img src="imagenes/bonus.png" alt="">
-                        </div>
-                        <span class="bonus_x2">x500</span>
-                </div>
-            </div>
         </div>
     </div>
 
-    <!--  -->
-    <div class="mensaje">
-        <p>Haz agotado tu credito, Quieres volver a jugar?</p>
-        <div class="botones">
-            <button type="button" class="no">No</button>
-            <button type="button" class="si">Si</button>
-        </div>
-    </div>
-        <button id="showImages" class="btn_jugar">Play</button>
-
-    </div>
-
-
-
-<script src="index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>
