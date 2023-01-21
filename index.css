@@ -181,18 +181,22 @@
     right: -20px;
 }
 .x_indic1{
-right: -20px;
+right: 0px;
 width: 30px;
 height: 30px;
 text-align: center;
 border-radius: 50%;
 }
 .x_indic2{
-right: -20px;
+right: 0px;
 width: 30px;
 height: 30px;
 text-align: center;
 border-radius: 50%;
+}
+.x_indic1,.x_indic2{
+    border: solid red 1px;
+    background-color: red;
 }
 
 .indic{
@@ -297,11 +301,11 @@ border-radius: 50%;
 .indic{
     transform: translateY(-200%) ;
     position: fixed;
-    top: 10px;
-    left: 70px;
+    top: 0px;
+    left: 0px;
     right: 0;
-    bottom: 0;
-    width: 70vw;
+    bottom: 10%;
+    width: 100vw;
     z-index: 100;
 }
 .ver_indic{
