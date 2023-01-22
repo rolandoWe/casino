@@ -123,7 +123,7 @@ if(rul3.className=='rule rule3 jugar'){
 
 // Aqui evaluamos las imagenes y sus posiciones para dar bonus
 function evaluarBonus(src1,src2,src3){
-    if(src1=='imagenes/bonus.png' && src2=='imagenes/bonus.png'&&
+    if(src1=='imagenes/uvasCasino.png' && src2=='imagenes/bonus.png'&&
      src3=='imagenes/uvasCasino.png'){
         monto=monto+5;
         saldo.value=monto
@@ -133,7 +133,18 @@ function evaluarBonus(src1,src2,src3){
 
         ganando()
      }
-    if(src1=='imagenes/bonus.png' && src2=='imagenes/bonus.png'&&
+    if(src1=='imagenes/bonus.png' && src2=='imagenes/siete.png'&&
+     src3=='imagenes/bonus.png'){
+        monto=monto+5;
+        saldo.value=monto
+        recompensa.value='+'+5
+
+        console.log('casino')
+        // slowAdd(monto,nuevoMonto)
+
+        ganando()
+     }
+    if(src1=='imagenes/siete.png' && src2=='imagenes/jungla.png'&&
      src3=='imagenes/siete.png'){
         monto=monto+5;
         saldo.value=monto
@@ -144,19 +155,8 @@ function evaluarBonus(src1,src2,src3){
 
         ganando()
      }
-    if(src1=='imagenes/siete.png' && src2=='imagenes/siete.png'&&
+    if(src1=='imagenes/jungla.png' && src2=='imagenes/bonus.png'&&
      src3=='imagenes/jungla.png'){
-        monto=monto+5;
-        saldo.value=monto
-        recompensa.value='+'+5
-
-        console.log('casino')
-        // slowAdd(monto,nuevoMonto)
-
-        ganando()
-     }
-    if(src1=='imagenes/jungla.png' && src2=='imagenes/jungla.png'&&
-     src3=='imagenes/bonus.png'){
         monto=monto+10;
         saldo.value=monto
         recompensa.value='+'+10
@@ -220,8 +220,8 @@ function evaluarBonus(src1,src2,src3){
         // slowAdd(monto,nuevoMonto)
         ganando()
      }
-    if(src1=='imagenes/jungla.png' && src2=='imagenes/jungla.png'&&
-     src3=='imagenes/uvasCasino.png'){
+    if(src1=='imagenes/jungla.png' && src2=='imagenes/uvasCasino.png'&&
+     src3=='imagenes/jungla.png'){
         monto=monto+200;
         saldo.value=monto
         recompensa.value='+'+200

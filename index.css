@@ -7,7 +7,7 @@
     background: linear-gradient(45deg,purple,rgb(61, 61, 249),violet);
 
 }
-.container{
+.container,.cont_todo{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -20,6 +20,13 @@
     font-size: 35px;
     font-weight: bold;
 }
+.cont_todo{
+    /* border:solid blue 2px; */
+    padding: 20px;
+    border-radius: 20px;
+    background:linear-gradient( 0deg, purple,blue,blueviolet);
+    box-shadow: 0 0 25px white;
+}
 @keyframes ani{
     0%{color: white;}
     25%{color: rgb(0, 217, 255);}
@@ -31,8 +38,11 @@
     position: relative;
     width:700px;
     height:300px;
+    border-radius: 20px;
     /* border:  solid gold 1px; */
-    background: blueviolet;
+    box-shadow: 0 0 15px white;
+    background: rgb(12, 1, 224);
+    overflow: hidden;
 
 }
 .pantalla{
@@ -149,14 +159,28 @@
     width: 100%;
 }
 .btn_jugar{
-    height: 70px;
+    height: 50px;
     width: 100px;
-    background-color: green;
-    color: white;
+    background-color: rgb(0, 0, 255,.5);
+    color: rgb(228, 228, 228);
     font-size: 30px;
     border-radius: 10px;
     border: none;
-    margin-top: 10px;
+    margin-top: 15px;
+    box-shadow: 0 0 10px white;
+    animation:  animar_btn infinite linear 4s;
+}
+@keyframes animar_btn{
+    0%{transform: scale(.9) ;
+    box-shadow: 0 0 0px white;
+
+    }
+    50%{transform: scale(1) ;
+        box-shadow: 0 0 10px white;
+    }
+    100%{transform: scale(.9) ;
+        box-shadow: 0 0 0px white;
+    }
 }
 .inf1,.inf2,.x_indic1,.x_indic2{
     display: inline-block;
@@ -195,8 +219,12 @@ text-align: center;
 border-radius: 50%;
 }
 .x_indic1,.x_indic2{
-    border: solid red 1px;
-    background-color: red;
+        /* border: solid red 1px; */
+    background-color: rgb(226, 43, 80);
+    line-height: 28px;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .indic{
@@ -304,7 +332,7 @@ border-radius: 50%;
     top: 0px;
     left: 0px;
     right: 0;
-    bottom: 10%;
+    bottom: 0%;
     width: 100vw;
     z-index: 100;
 }
@@ -312,13 +340,20 @@ border-radius: 50%;
     transform: translateY(0%) ;
 
 }
+.indic p{
+    margin-top: 30px;
+}
 #image{
     width: 70px;
     height: 70px;
 }
+.imagenes img{
+    width: 35px;
+   }
 .contenedor{
     width:250px;
     height:210px;
+    overflow: visible;
 }
 .pantalla{
     width: 300px;
