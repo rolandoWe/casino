@@ -46,27 +46,34 @@
 
 }
 .pantalla{
-    position: relative;
+    /* position: relative; */
     width: 500px;
-    height: 30px;
+    /* height: 30px; */
     /* border: solid red 1px; */
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 4, 126);
     border-radius: 5px;
-    padding: 5px;
+    padding: 1px;
     margin-bottom: 10px;
     /* overflow: hidden; */
+    font-family: 'Quantico';
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 .pantalla label{
     color: white;
 }
 .saldo{
-    width:100px;
-    height:100%;
+    width:80px;
+    /* height:100%; */
     box-sizing: border-box;
     text-align: right;
-    background-color: black;
-    color: white;
+    background-color: transparent;
+    color: rgb(191, 190, 190);
     border: none;
+    margin: 0;
 }
 .dolar{
     display: inline-block;
@@ -75,20 +82,54 @@
 .extra{
     display: flex;
     align-items: center;
-    position: absolute;
+    /* position: absolute;
     right: 0;
-    top: 0;
+    top: 0; */
     width: 100px;
+    margin: 0;
+    /* color: rgb(191, 190, 190); */
+
 }
 .extra input{
     width: 80%;
-    background-color: black;
-    color: white;
+    background-color: transparent;
+    /* color: white; */
+    color: rgb(191, 190, 190);
+
     text-align: right;
     border: none;
 }
 .extra i{
     color: yellow;
+}
+.ganaste{
+    /* position: absolute;
+    top: 0; */
+    /* left: 50%; */
+    width:150px;
+    display: flex;
+    align-items: center;
+    /* border: solid red; */
+    margin: 0;
+    color: rgb(191, 190, 190);
+
+}
+.ganaste label{
+    color: rgb(191, 190, 190);
+
+}
+.ganaste i{
+    color: yellow;
+}
+.inp_gana{
+    width: 50%;
+    text-align: right;
+    background: transparent;
+    /* color: white; */
+    color: rgb(191, 190, 190);
+
+    border: none;
+    padding-right: 10px;
 }
 .animarDolar{
     animation: animarDolar 3s infinite linear;
@@ -342,6 +383,16 @@ border-radius: 50%;
 }
 .indic p{
     margin-top: 30px;
+}
+.pantalla{
+    height: 50px;
+    font-size: 15px;
+}
+.ganaste{
+    width: 50%;
+}
+.saldo{
+    width: 30%;
 }
 #image{
     width: 70px;
